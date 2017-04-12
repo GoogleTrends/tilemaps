@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Tilemaps</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        path {
+              stroke: black;
+              fill: white;
+            }
+        .party-AngelaMerkel {
+              fill: black;
+              background-color: black;
+              color:white;
+            }
+        .party-MartinSchulz {
+              fill: #e2001a;
+              background-color: #e2001a;
+              color:white;
+            }
+        .party-FraukePetry {
+              fill: #009ee0;
+              background-color: #009ee0;
+              color:white;
+            }
+        .party-CemÖzdemir {
+              fill: #1fa12d;
+              background-color: #1fa12d;
+              color:white;
+            }
+        .party-ChristianLindner {
+              fill: #ffed00;
+              background-color: #ffed00;
+              color:black;
+            }
+        .party-BjörnHöcke {
+              fill: brown;
+              background-color: brown;
+              color:white;
+            }
+        .party-SahraWagenknecht {
+              fill: #a5088b;
+              background-color: #a5088b;
+              color:white;
+            }
+        .party-mehreregleichstark {
+              fill: white;
+              background-color: #EEE;
+              color:black;
+            }
+        .party-nocities {
+              fill: #3d3f42;
+              background-color: #3d3f42;
+              color:white;
+            }
+        .mouseoverColor {
+              fill: #fff377;
+              background-color: #fff377;
+              color:white;
+            }
+        #legend {
+          list-style-type: none;
+          width: 100%;
+          margin: 0px;
+          padding: 0px;
+          }
+        #legend li {
+          padding:2px 10px 2px 30px;
+
+          }
+
+          .svg-container {
+              display: inline-block;
+              position: relative;
+              width: 100%;
+              padding-bottom: 100%; /* aspect ratio */
+              vertical-align: top;
+              overflow: hidden;
+            }
+
+          .svg-content-responsive {
+                display: inline-block;
+                position: absolute;
+                top: 10px;
+                left: 0;
+            } 
+
+
+          div.tooltip {
+              position: absolute;
+              text-align: center;
+              padding: 2px 8px;
+              min-width: 50px;
+              font: 12px sans-serif;
+              background: #fff;
+              border: 0px;
+              pointer-events: none;
+              border: 1px solid #bdbdbd;
+              z-index:30000;
+            }
+    </style>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top">
+
+    <section id="tilemap">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-10 col-md-offset-1">
+                    <h2 class="section-heading">Mostsearched candidate</h2>
+                    <p>Which candidate is searched most by each election boundary.</p>
+                </div>
+             </div>
+            <div class="row">
+                <div id="tilecontainer" class="col-md-10"></div>
+                <div id="tilelegend" class="col-md-2"><ul id="legend"></ul></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- jQuery -->
+    <script src="lib/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="lib/d3/d3.v4.min.js"></script>
+    <script src="lib/d3/topojson.v2.min.js"></script> 
+    
+    <script src="lib/mytilegram.js"></script>
+    
+
+</body>
+
+</html>
